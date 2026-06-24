@@ -35,6 +35,11 @@ def read_stderr_file(path):
 
 
 def main():
+    # Check if disabled via uninstall.sh disable
+    disable_flag = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".disabled")
+    if os.path.exists(disable_flag):
+        return
+
     parser = argparse.ArgumentParser(description="Explain a failed CLI command")
     parser.add_argument("--cmd", required=True, help="The command that failed")
     parser.add_argument("--exit-code", required=True, type=int, help="Exit code of the failed command")
