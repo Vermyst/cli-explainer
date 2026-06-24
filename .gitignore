@@ -1,0 +1,6 @@
+.cli_explainer.db
+.ollama_host
+__pycache__/
+*.pyc
+dashboard/node_modules/
+dashboard/.next/
