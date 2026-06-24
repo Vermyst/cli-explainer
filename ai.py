@@ -10,7 +10,7 @@ import requests
 
 TIMEOUT_SECONDS = 30
 OLLAMA_MODEL = "mistral"
-GROQ_MODEL   = "mixtral-8x7b-32768"
+GROQ_MODEL   = "llama3-8b-8192"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
